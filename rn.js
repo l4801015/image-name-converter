@@ -12,7 +12,7 @@ const files = readdirSync(imageDirPath);
 
 for (i = 0; i < files.length; i++) {
 
-  const before = "Petrov A.D.jpeg"
+  const before = files[i]
   const temp = before.split(".")
   const tempName = temp[0].split(" ")
   const after = temp[1] + "." + tempName[0] + "." + temp[2]
